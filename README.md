@@ -1,2 +1,2 @@
-# overleafv2
-Sandbox for Overleaf v2 intergration
+# Overleaf v2 Sandbox
+Sandbox for Overleaf v2 integration
