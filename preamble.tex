@@ -1,0 +1,54 @@
+% ----------------------------------------------------------------- %
+%                                                                   %
+%                       -- Preamble --                              %
+%                                                                   %
+% ----------------------------------------------------------------- %
+
+% Document class
+\newcommand{\dcl}[1]{
+	\documentclass{#1}
+}
+\ifdefined\demo
+	\renewcommand{\dcl}[1]{
+		\documentclass[demo]{#1}
+	}
+\fi
+\ifdefined\draft
+	\renewcommand{\dcl}[1]{
+		\documentclass[draft]{#1}
+	}
+\fi
+\dcl{article}
+
+% Packages
+\usepackage[utf8]{inputenc}				% Required by Overleaf
+\usepackage{graphicx}					% Figures
+\usepackage{siunitx}					% Units
+\usepackage{amsmath}					% Math
+\usepackage{mathtools}					% Math
+\usepackage{booktabs}					% Tables
+
+% Macros
+\newcommand{\supp}{Supplementary Information}
+\newcommand{\fs}{\femto\second}
+\newcommand{\THz}{\tera\hertz}
+\newcommand{\pol}[1]{\left \langle #1 \right \rangle}
+\newcommand{\AP}{\pol{0,0,0,0}}
+\newcommand{\XP}{\pol{\tfrac{\pi}{2},\tfrac{\pi}{2},0,0}}
+\newcommand{\bra}[1]{\langle #1 \rvert}
+\newcommand{\ket}[1]{\lvert #1 \rangle}
+\newcommand{\peak}[4]{\( E^{(3)}_{#1} \left ( \ket{#2},#3,\ket{#4} \right ) \)}
+\DeclareSIUnit{\Molar}{\textsc{M}}
+\DeclareSIUnit{\arbitraryunit}{arb. unit}
+
+% Options
+\setcounter{MaxMatrixCols}{15}			% Large matrices
+
+% Authors
+\author{Marcelo J. P. Alcocer}
+
+% Title
+\title{Overleaf v2 Sandbox}
+
+
+
